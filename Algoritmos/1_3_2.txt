@@ -1,0 +1,17 @@
+ALGORITMO: CalcularDados2
+VARIAVEIS:
+	lado1, lado2, area, perimetro: inteiro
+INICIO
+1.REPETIR
+     LER lado1
+  ATÉ (lado1 > 0 E lado1 <= 100)
+
+2.FAZER
+     LER lado2
+  ENQUANTO (lado2 <= 0 OU lado1 == lado2 OU lado2 > 100)
+
+3. FAZER area = lado1 * lado2
+4. FAZER perimetro = (lado1*lado2) * 2
+5. ESCREVER area
+6. ESCREVER perimetro
+FIM

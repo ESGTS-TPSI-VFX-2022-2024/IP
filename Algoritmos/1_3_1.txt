@@ -1,0 +1,12 @@
+Algoritmo: CalcularDados
+Variaveis:
+	lado1, lado2, area, perimetro: inteiro
+INICIO
+1. LER lado1
+2. LER lado2
+3. FAZER area = lado1 * lado2
+4. FAZER perimetro = (lado1 + lado2)*2
+5. ESCREVER area
+6. ESCREVER perimetro
+FIM
+	
