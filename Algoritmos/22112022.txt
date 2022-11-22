@@ -1,0 +1,14 @@
+ALGORITMO: LER NUMEROS
+VARIAVEIS:
+	a: inteiro
+	b: inteiro
+INICIO
+1. ESCREVER "Qual o A?"
+2. LER a
+3. ESCREVER "Qual o B?"
+4. LER b
+5. SE (a > b) ENTAO
+	5.1 ESCREVER a
+SENÂO
+	5.2 ESCREVER b 
+FIM
