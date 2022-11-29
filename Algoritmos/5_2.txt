@@ -1,0 +1,21 @@
+ALGORITMO: Tempo de Corrida
+VARIÁVEIS:
+horas, minutos, segundos, 
+horasEmSegundos, minutosEmSegundos,
+totalEmSegundos : inteiro
+CONSTANTES:
+TEMPO_1 : inteiro = 7936
+INICIO
+1. ESCREVER "Quantas horas?"
+2. LER horas
+3. ESCREVER "Quantos minutos?"
+4. LER minutos
+5. ESCREVER "Quantos segundos?"
+6. LER segundos
+7. horasEmSegundos = horas * 3600
+8. minutosEmSegundos = minutos * 60
+9. totalEmSegundos = horasEmSegundos + minutosEmSegundos + segundos
+10. SE (TEMPO_1 > totalEmSegundos)
+ENTÃO ESCREVER "Atleta 2 venceu"
+SENÃO ESCREVER "Atleta 1  venceu"
+FIM
