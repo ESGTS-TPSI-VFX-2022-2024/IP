@@ -1,0 +1,15 @@
+ALGORITMO: Calcular a área
+VARIÁVEIS
+	raio: real
+	areaCirculo: real
+CONSTANTES
+	PI = 3.14
+INICIO
+	1. FAZER
+		LER raio
+	ENQUANTO (raio < 5 OU raio > 10)
+
+	2. areaCirculo = PI * raio2
+
+	3. ESCREVER areaCirculo
+FIM
