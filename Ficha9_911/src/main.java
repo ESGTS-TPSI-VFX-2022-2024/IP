@@ -12,14 +12,13 @@ public class main {
 			//System.out.println(sequencia[i]);
 		}
 		
+		// Ordenar vector decrescente
 		int alteracoes = 0;
 		boolean continuar = true;
 		
 		while (continuar == true) {
 			
-			// Ordenar vector decrescente
 			for(int i = 0; i < sequencia.length - 1; i++) {
-				//System.out.println(sequencia[i]);
 				if (sequencia[i] > sequencia[i+1]) {
 					int temp = sequencia[i];
 					
@@ -37,10 +36,6 @@ public class main {
 			alteracoes = 0;
 			
 		}
-		
-		
-		
-		
 		
 		//mostrar ordenacao
 		for (int i : sequencia) {
