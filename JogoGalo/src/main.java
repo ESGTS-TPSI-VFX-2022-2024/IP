@@ -19,11 +19,15 @@ public class main {
 			
 			System.out.println("JOGADOR " + jogadorAtual);
 			
-			System.out.println("Qual a linha?");
-			linhaJogada = sc.nextInt();
+			do {
+				System.out.println("Qual a linha?");
+				linhaJogada = sc.nextInt();	
+			} while (linhaJogada < 1 || linhaJogada > 3);
 			
-			System.out.println("Qual a coluna?");
-			colunaJogada = sc.nextInt();
+			do {
+				System.out.println("Qual a coluna?");
+				colunaJogada = sc.nextInt();
+			} while (colunaJogada < 1 || colunaJogada > 3);
 			
 			if (tabuleiro[linhaJogada-1][colunaJogada-1] == null) {
 				tabuleiro[linhaJogada-1][colunaJogada-1] = (jogadorAtual == 1 ? "X" : "O");
@@ -57,14 +61,24 @@ public class main {
 		
 		String resultado = "";
 		
+		resultado = resultado + "-------\r\n";
+		
 		for (int i = 0; i < tabuleiro.length; i++) {
+			
 			for (int j = 0; j < tabuleiro[i].length; j++) {	
-				resultado = resultado + " " + tabuleiro[i][j];
+				
+				String jogada = tabuleiro[i][j] == null ? " " : tabuleiro[i][j];
+				
+				resultado = resultado + "|" + jogada;
 			}
 			
 			//Quebra de linha
-			resultado = resultado + "\r\n";
+			resultado = resultado + "|\r\n";
+			resultado = resultado + "-------\r\n";
+			
 		}
+		
+		
 		
 		return resultado;
 		
